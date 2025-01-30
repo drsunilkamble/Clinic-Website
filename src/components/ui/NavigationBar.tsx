@@ -1,16 +1,17 @@
 import React from 'react';
 import { Heart, Menu, X } from 'lucide-react';
-
+import Logo from '@/assets/ClinicLogo.jpg';
 const NavigationBar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   return (
-    <nav className="w-full px-4 py-4 border-b">
+    <nav className="w-full px-4 border-b">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <Heart className="w-5 h-5 text-blue-600" />
-          <span className="text-lg font-semibold text-slate-900">MediCare</span>
+          {/* <Heart className="w-5 h-5 text-blue-600" />
+          <span className="text-lg font-semibold text-slate-900">MediCare</span> */}
+            <img src={Logo} alt="Logo" className="w-20 h-20 " />
         </div>
 
         {/* Desktop Navigation */}

@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import { useState } from 'react';
 import { Star, ArrowUpRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import DoctorPNG from '@/assets/doctor.png';
@@ -27,24 +27,25 @@ const HeroSection = () => {
           </div>
 
           {/* Headline */}
-          <h1 className="text-6xl font-bold text-slate-900 leading-tight">
+          {/* Headline */}
+          <h1 className="text-5xl font-bold text-slate-900 leading-tight">
             Healthcare
-            <div className="inline-flex items-center gap-3 ml-3">
-              <span className="bg-blue-100 px-4 py-1 rounded-lg text-blue-600">reimagined</span>
+            <div className="inline-flex items-center gap-2 ml-2">
+              <span className="text-blue-600">reimagined</span>
             </div>
-            <div className="mt-3">
+            <div className="">
               for the modern age
             </div>
           </h1>
 
           <p className="text-xl text-slate-600 max-w-xl leading-relaxed">
-            Experience the perfect blend of compassionate care and cutting-edge technology. 
+            Experience the perfect blend of compassionate care and cutting-edge technology.
             Your health journey begins with personalized attention that puts you first.
           </p>
 
           {/* CTAs */}
           <div className="flex items-center gap-4">
-            <Button 
+            <Button
               className="group bg-slate-900 hover:bg-slate-800 text-white px-8 py-7 text-lg rounded-2xl flex items-center gap-2"
               onMouseEnter={() => setIsHovered(true)}
               onMouseLeave={() => setIsHovered(false)}
@@ -61,13 +62,13 @@ const HeroSection = () => {
           {/* Main Image Container */}
           <div className="relative">
             <div className="aspect-square rounded-[2.5rem] bg-gradient-to-br from-blue-100 to-blue-50 overflow-hidden">
-              <img 
+              <img
                 src={DoctorPNG}
-                alt="Doctor placeholder" 
+                alt="Doctor placeholder"
                 className="w-full h-full object-cover"
               />
             </div>
-            
+
           </div>
         </div>
       </div>
