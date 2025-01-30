@@ -38,7 +38,7 @@ const HeroSection = () => {
             </div>
           </h1>
 
-          <p className="text-xl text-slate-600 max-w-xl leading-relaxed">
+          <p className="text-lg text-slate-600 max-w-xl leading-relaxed">
             Experience the perfect blend of compassionate care and cutting-edge technology.
             Your health journey begins with personalized attention that puts you first.
           </p>
