@@ -1,8 +1,8 @@
 import './App.css'
-import NavigationBar from './components/ui/NavigationBar'
-import VisionSection from './components/ui/VisionSection'
-import HeroSection from './components/ui/HeroSection'
-import ServicesSection from './components/ui/ServiceSection'
+import NavigationBar from './Sections/NavigationBar'
+import VisionSection from './Sections/VisionSection'
+import HeroSection from './Sections/HeroSection'
+import ServicesSection from './Sections/ServiceSection'
 
 function App() {
 

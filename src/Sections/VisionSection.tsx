@@ -17,7 +17,7 @@ const VisionSection = () => {
   </div>
 
   {/* Right side first feature */}
-  <div className="p-6 bg-slate-50 rounded-xl border border-slate-100">
+  <div className="p-6 bg-slate-50 rounded-xl border border-neutral-200">
     <div className="flex gap-3 items-start">
       <div className="p-1 bg-blue-100 rounded-full">
         <svg className="w-4 h-4 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -32,7 +32,7 @@ const VisionSection = () => {
   </div>
 
   {/* Bottom row features */}
-  <div className="p-6 bg-slate-50 rounded-xl border border-slate-100">
+  <div className="p-6 bg-slate-50 rounded-xl border border-neutral-200">
     <div className="flex gap-3 items-start">
       <div className="p-1 bg-blue-100 rounded-full">
         <svg className="w-4 h-4 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor">
@@ -46,7 +46,7 @@ const VisionSection = () => {
     </div>
   </div>
 
-  <div className="p-6 bg-slate-50 rounded-xl border border-slate-100">
+  <div className="p-6 bg-slate-50 rounded-xl border border-neutral-200">
     <div className="flex gap-3 items-start">
       <div className="p-1 bg-blue-100 rounded-full">
         <svg className="w-4 h-4 text-blue-600" viewBox="0 0 24 24" fill="none" stroke="currentColor">
