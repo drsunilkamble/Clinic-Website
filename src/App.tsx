@@ -1,7 +1,8 @@
 import './App.css'
 import NavigationBar from './components/ui/NavigationBar'
 import VisionSection from './components/ui/VisionSection'
-import HeroSection from './pages/Hero/HeroSection'
+import HeroSection from './components/ui/HeroSection'
+import ServicesSection from './components/ui/ServiceSection'
 
 function App() {
 
@@ -11,7 +12,8 @@ function App() {
       <div className="relative min-h-screen flex flex-col items-center justify-start overflow-hidden">
         <NavigationBar />
         <HeroSection />
-        < VisionSection />
+        <VisionSection />
+        < ServicesSection />
       </div>
       </div>
     </>
