@@ -10,9 +10,6 @@ const VisionSection = () => {
       Finding health solutions<br />
       with top Experts
     </h2>
-    <button className="px-4 py-2 bg-slate-900 text-white rounded-lg text-sm">
-      About Me
-    </button>
   </div>
 
   {/* Right side first feature */}
