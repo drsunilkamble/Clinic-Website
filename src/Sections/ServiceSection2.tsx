@@ -63,7 +63,7 @@ const ServicesSection = () => (
   <section className="py-20 bg-gradient-to-b from-white to-slate-50/50">
     <div className="max-w-6xl mx-auto px-4">
       <div className="mb-16 space-y-2">
-        <h2 className="text-4xl font-semibold text-slate-900">
+        <h2 className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-600 font-medium text-sm">
           Our Medical Services
         </h2>
         <p className="text-slate-500 text-lg">

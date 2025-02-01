@@ -3,6 +3,8 @@ import NavigationBar from './Sections/NavigationBar'
 import VisionSection from './Sections/VisionSection'
 import HeroSection from './Sections/HeroSection'
 import ServicesSection from './Sections/ServiceSection'
+import ReviewSection from './Sections/ReviewSection'
+import FooterSection from './Sections/FooterSection'
 
 function App() {
 
@@ -13,7 +15,9 @@ function App() {
         <NavigationBar />
         <HeroSection />
         <VisionSection />
-        < ServicesSection />
+        <ServicesSection />
+        <ReviewSection />
+        <FooterSection />
       </div>
       </div>
     </>

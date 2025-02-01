@@ -12,21 +12,23 @@ const HeroSection = () => {
 
       {/* Hero Content */}
       <div className="max-w-7xl mx-auto px-4 pt-12 pb-24 grid lg:grid-cols-2 gap-16 items-center">
-        {/* Left Column */}
         <div className="space-y-8">
-          {/* Reviews Badge */}
-          <div className="flex items-center gap-3 bg-white py-2.5 px-5 rounded-full w-fit shadow-sm hover:shadow-md transition-shadow">
-            <div className="flex -space-x-1">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-              ))}
-            </div>
-            <span className="font-semibold text-slate-900">4.9</span>
-            <span className="text-slate-400">|</span>
-            <span className="text-slate-600">4,230 Reviews</span>
-          </div>
+        <div className="inline-flex items-center gap-4 bg-white/90 backdrop-blur-sm py-3 px-6 
+    rounded-full shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100">
+    <div className="flex gap-0.5">
+      {[...Array(5)].map((_, i) => (
+        <Star key={i} className="w-4 h-4 fill-blue-500 text-blue-500" />
+      ))}
+    </div>
+    <div className="flex items-center gap-3 text-sm">
+      <span className="font-medium text-slate-900">4.9</span>
+      <span className="text-slate-300">•</span>
+      <span className="text-slate-600">141 Reviews</span>
+    </div>
+  </div>
 
-          {/* Headline */}
+        <div className="flex flex-col space-y-3">
+                    {/* Headline */}
           {/* Headline */}
           <h1 className="text-5xl font-bold text-slate-900 leading-tight">
             Healthcare
@@ -42,6 +44,7 @@ const HeroSection = () => {
             Experience the perfect blend of compassionate care and cutting-edge technology.
             Your health journey begins with personalized attention that puts you first.
           </p>
+        </div>
 
           {/* CTAs */}
           <div className="flex items-center gap-4">

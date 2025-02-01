@@ -77,14 +77,17 @@ const ServiceCard: React.FC<ServiceProps> = ({ title, description, features, ima
 const ServicesSection = () => (
   <section className="py-20 max-w-7xl">
     <div className="max-w-7xl mx-auto px-4">
-      <div className="mb-16 space-y-2 text-center">
-        <h2 className="text-4xl font-semibold text-slate-900">
-          Our Medical Services
-        </h2>
-        <p className="text-slate-600 text-lg">
-          Experience excellence in healthcare through our specialized medical services.
-        </p>
-      </div>
+      <div className="space-y-2 mb-5">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-600 font-medium text-sm">
+                Our Medical Services
+              </div>
+              <h2 className="text-4xl font-bold text-slate-900 leading-tight">
+                What we offer to our patients
+              </h2>
+              <p className="text-lg text-slate-600 leading-relaxed">
+              Experience excellence in healthcare through our specialized medical services.
+              </p>
+            </div>
 
       <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
         {services.map((service, index) => (
