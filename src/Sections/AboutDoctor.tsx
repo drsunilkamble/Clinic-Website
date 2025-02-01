@@ -65,7 +65,7 @@ const AboutDoctor = () => {
 
               {/* Orbiting achievement cards */}
               <OrbitingCircles
-                radius={200}
+                radius={280}
                 path={false}
                 className="absolute inset-0 w-full h-full"
               >
