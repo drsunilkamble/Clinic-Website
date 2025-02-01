@@ -5,6 +5,8 @@ import HeroSection from './Sections/HeroSection'
 import ServicesSection from './Sections/ServiceSection'
 import ReviewSection from './Sections/ReviewSection'
 import FooterSection from './Sections/FooterSection'
+import AboutDoctor from './Sections/AboutDoctor'
+import { OrbitingCircles } from './components/ui/orbiting-circles'
 
 function App() {
 
@@ -15,6 +17,7 @@ function App() {
         <NavigationBar />
         <HeroSection />
         <VisionSection />
+        <AboutDoctor />
         <ServicesSection />
         <ReviewSection />
         <FooterSection />

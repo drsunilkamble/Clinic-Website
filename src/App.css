@@ -78,3 +78,25 @@
 .hover\:pause:hover {
   animation-play-state: paused;
 }
+
+@keyframes orbitSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.orbit-container {
+  animation: orbitSpin 40s linear infinite;
+  position: relative;
+}
+.orbit-card {
+  position: absolute;
+  /* Positions each card around the circle */
+  transform-origin: center -200px; /* adjust radius as needed */
+}
+.orbit-card-inner {
+  /* This counter-rotates the card so it remains upright */
+  transform: rotate(-0deg); /* same speed but opposite sign if needed */
+}
