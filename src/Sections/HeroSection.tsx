@@ -32,7 +32,7 @@ const HeroSection = () => {
           {/* Headline */}
           <h1 className="text-5xl font-bold text-slate-900 leading-tight">
             Healthcare
-            <div className="inline-flex items-center gap-2 ml-2">
+            <div className="inline-flex items-center gap-2 lg:ml-2 ml-0">
               <span className="text-blue-600">reimagined</span>
             </div>
             <div className="">
