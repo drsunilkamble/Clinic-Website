@@ -6,13 +6,12 @@ import ServicesSection from './Sections/ServiceSection'
 import ReviewSection from './Sections/ReviewSection'
 import FooterSection from './Sections/FooterSection'
 import AboutDoctor from './Sections/AboutDoctor'
-import SmoothScrollWrapper from './components/ui/SmoothScrollbar'
+import BeforeAndAfterGallery from './Sections/BeforeAndAfter'
 
 function App() {
 
   return (
     <>
-      <SmoothScrollWrapper>
         <div className="w-full bg-gradient-to-br from-slate-50 to-blue-50">
           <div className="relative min-h-screen flex flex-col items-center justify-start overflow-hidden">
             <NavigationBar />
@@ -20,11 +19,11 @@ function App() {
             <VisionSection />
             <AboutDoctor />
             <ServicesSection />
+            <BeforeAndAfterGallery />
             <ReviewSection />
             <FooterSection />
           </div>
         </div>
-      </SmoothScrollWrapper>
     </>
   )
 }
