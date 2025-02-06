@@ -75,7 +75,7 @@ const ServiceCard: React.FC<ServiceProps> = ({ title, description, features, ima
 );
 
 const ServicesSection = () => (
-  <section className="py-20 max-w-7xl">
+  <section id='services' className="py-20 max-w-7xl">
     <div className="max-w-7xl mx-auto px-4">
       <div className="space-y-2 mb-5">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-600 font-medium text-sm">

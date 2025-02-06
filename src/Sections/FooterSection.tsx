@@ -2,7 +2,7 @@ import { MapPin, Phone, Mail, Clock, Facebook, Twitter, Instagram } from 'lucide
 
 const FooterSection = () => {
   return (
-    <footer className="bg-gradient-to-br from-slate-900 to-slate-800 text-white w-full">
+    <footer id="contact" className="bg-gradient-to-br from-slate-900 to-slate-800 text-white w-full">
       <div className="max-w-7xl mx-auto px-4 py-16">
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}

@@ -27,7 +27,7 @@ const doctorInfo = {
 
 const AboutDoctor = () => {
   return (
-    <section className="py-16 md:py-32 relative bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50">
+    <section id="about" className="py-16 md:py-32 relative bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">

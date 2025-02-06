@@ -18,16 +18,16 @@ const NavigationBar = () => {
         <div className="hidden md:flex items-center font-medium flex-1">
           {/* Centered links */}
           <div className="flex-1 flex justify-center space-x-6">
-            <a href="#" className="px-3 py-2 rounded text-slate-600 hover:bg-slate-100 transition-colors">
+            <a href="#services" className="px-3 py-2 rounded text-slate-600 hover:bg-slate-100 transition-colors">
               Services
             </a>
-            <a href="#" className="px-3 py-2 rounded text-slate-600 hover:bg-slate-100 transition-colors">
+            <a href="#about" className="px-3 py-2 rounded text-slate-600 hover:bg-slate-100 transition-colors">
               About
             </a>
-            <a href="#" className="px-3 py-2 rounded text-slate-600 hover:bg-slate-100 transition-colors">
-              Doctors
+            <a href="#reviews" className="px-3 py-2 rounded text-slate-600 hover:bg-slate-100 transition-colors">
+              Reviews
             </a>
-            <a href="#" className="px-3 py-2 rounded text-slate-600 hover:bg-slate-100 transition-colors">
+            <a href="#contact" className="px-3 py-2 rounded text-slate-600 hover:bg-slate-100 transition-colors">
               Contact
             </a>
           </div>
@@ -52,17 +52,17 @@ const NavigationBar = () => {
         {isMenuOpen && (
           <div className="absolute top-16 left-0 right-0 bg-white shadow-sm md:hidden">
             <div className="flex flex-col p-4 gap-2">
-              <a href="#" className="py-2 rounded text-slate-600 hover:bg-slate-100 text-center transition-colors">
+              <a href="#services" className="py-2 rounded text-slate-600 hover:bg-slate-100 text-center transition-colors">
                 Services
               </a>
-              <a href="#" className="py-2 rounded text-slate-600 hover:bg-slate-100 text-center transition-colors">
+              <a href="#about" className="py-2 rounded text-slate-600 hover:bg-slate-100 text-center transition-colors">
                 About
               </a>
-              <a href="#" className="py-2 rounded text-slate-600 hover:bg-slate-100 text-center transition-colors">
-                Doctors
+              <a href="#reviews" className="py-2 rounded text-slate-600 hover:bg-slate-100 text-center transition-colors">
+                Reviews
               </a>
-              <a href="#" className="py-2 rounded text-slate-600 hover:bg-slate-100 text-center transition-colors">
-                Contact
+              <a href="#contact" className="px-3 py-2 rounded text-slate-600 hover:bg-slate-100 transition-colors">
+              Contact
               </a>
               <button className="py-2 rounded bg-slate-700 hover:bg-slate-800 text-white transition-colors">
                 Book Now

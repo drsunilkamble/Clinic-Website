@@ -72,7 +72,7 @@ const ReviewCard = ({ name, role, rating, comment, image }: Review) => (
 
 const ReviewSection = () => {
   return (
-    <section className="py-32 relative overflow-hidden">
+    <section id='reviews' className="py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50 opacity-90" />
       
       <div className="max-w-7xl mx-auto px-4 relative">
