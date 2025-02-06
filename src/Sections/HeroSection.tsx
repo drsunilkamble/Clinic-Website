@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Star, ArrowUpRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import DoctorPNG from '@/assets/doctor.png';
+import ClinicLogo from "@/assets/ClinicLogo.png";
 const HeroSection = () => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -13,21 +14,14 @@ const HeroSection = () => {
       {/* Hero Content */}
       <div className="max-w-7xl mx-auto px-4 pt-12 pb-24 grid lg:grid-cols-2 gap-16 items-center">
         <div className="space-y-8">
-        <div className="inline-flex items-center gap-4 bg-white/90 backdrop-blur-sm py-3 px-6 
-    rounded-full shadow-sm hover:shadow-md transition-all duration-300 border border-slate-100">
-    <div className="flex gap-0.5">
-      {[...Array(5)].map((_, i) => (
-        <Star key={i} className="w-4 h-4 fill-blue-500 text-blue-500" />
-      ))}
-    </div>
-    <div className="flex items-center gap-3 text-sm">
-      <span className="font-medium text-slate-900">4.9</span>
-      <span className="text-slate-300">•</span>
-      <span className="text-slate-600">141 Reviews</span>
-    </div>
-  </div>
+        <img 
+  src={ClinicLogo}
+  alt="Clinic Logo" 
+  className="mt-4 w-32 hidden md:block" 
+/>
 
         <div className="flex flex-col space-y-3">
+
                     {/* Headline */}
           {/* Headline */}
           <h1 className="text-5xl font-bold text-slate-900 leading-tight">
