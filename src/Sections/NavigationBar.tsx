@@ -1,9 +1,30 @@
 import React from 'react';
 import { Menu, X } from 'lucide-react';
 import Logo from '@/assets/ClinicLogo.png';
+import { motion } from 'framer-motion';
 
 const NavigationBar = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const phoneNumber = '9699361189'; // Replace with the actual phone number
+
+  const mobileMenuVariants = {
+    open: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.2,
+        ease: "easeInOut"
+      }
+    },
+    closed: {
+      y: "-100vh",
+      opacity: 0,
+      transition: {
+        duration: 0.2,
+        ease: "easeInOut"
+      }
+    }
+  };
 
   return (
     <nav className="bg-white w-full px-4 py-3 shadow-sm sticky top-0 z-50">
@@ -33,10 +54,11 @@ const NavigationBar = () => {
           </div>
           {/* Remaining links + Book Now */}
           <div className="flex items-center space-x-4">
-
-            <button className="px-4 py-2 rounded bg-slate-700 hover:bg-slate-800 text-white transition-colors">
-              Call Now
-            </button>
+            <a href={`tel:${phoneNumber}`}>
+              <button className="px-4 py-2 rounded bg-slate-700 hover:bg-slate-800 text-white transition-colors">
+                Call Now
+              </button>
+            </a>
           </div>
         </div>
 
@@ -49,27 +71,40 @@ const NavigationBar = () => {
         </button>
 
         {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="absolute top-16 left-0 right-0 bg-white shadow-sm md:hidden">
-            <div className="flex flex-col p-4 gap-2">
-              <a href="#services" className="py-2 rounded text-slate-600 hover:bg-slate-100 text-center transition-colors">
-                Services
-              </a>
-              <a href="#about" className="py-2 rounded text-slate-600 hover:bg-slate-100 text-center transition-colors">
-                About
-              </a>
-              <a href="#reviews" className="py-2 rounded text-slate-600 hover:bg-slate-100 text-center transition-colors">
-                Reviews
-              </a>
-              <a href="#contact" className="px-3 py-2 rounded text-slate-600 hover:bg-slate-100 transition-colors">
-              Contact
-              </a>
-              <button className="py-2 rounded bg-slate-700 hover:bg-slate-800 text-white transition-colors">
-                Book Now
+        <motion.div
+          className="absolute top-0 left-0 w-full bg-white shadow-md md:hidden z-50"
+          variants={mobileMenuVariants}
+          animate={isMenuOpen ? "open" : "closed"}
+          style={{ position: "fixed" }}
+        >
+          <div className="flex flex-col p-4">
+            <div className="flex justify-end">
+              <button
+                className="p-2 rounded transition-colors text-slate-600 hover:bg-slate-200"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <X className="w-6 h-6" />
               </button>
             </div>
+            <nav className="flex flex-col space-y-2 mt-2">
+              <a href="#services" className="py-2 rounded text-slate-600 hover:bg-slate-100 transition-colors block" onClick={() => setIsMenuOpen(false)}>
+                Services
+              </a>
+              <a href="#about" className="py-2 rounded text-slate-600 hover:bg-slate-100 transition-colors block" onClick={() => setIsMenuOpen(false)}>
+                About
+              </a>
+              <a href="#reviews" className="py-2 rounded text-slate-600 hover:bg-slate-100 transition-colors block" onClick={() => setIsMenuOpen(false)}>
+                Reviews
+              </a>
+              <a href="#contact" className="py-2 rounded text-slate-600 hover:bg-slate-100 transition-colors block" onClick={() => setIsMenuOpen(false)}>
+                Contact
+              </a>
+              <a href={`tel:${phoneNumber}`} className="py-2 rounded bg-slate-700 hover:bg-slate-800 text-white transition-colors block text-center" onClick={() => setIsMenuOpen(false)}>
+                Call Now
+              </a>
+            </nav>
           </div>
-        )}
+        </motion.div>
       </div>
     </nav>
   );
