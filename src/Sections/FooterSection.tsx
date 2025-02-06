@@ -26,7 +26,7 @@ const FooterSection = () => {
                 <Phone className="w-6 h-6 text-blue-400" />
                 <div>
                   <h3 className="font-medium mb-1">Phone</h3>
-                  <p className="text-slate-400">+91 (22) 2222-3333</p>
+                  <p className="text-slate-400">+91 9699361189</p>
                 </div>
               </div>
 
@@ -34,7 +34,7 @@ const FooterSection = () => {
                 <Mail className="w-6 h-6 text-blue-400" />
                 <div>
                   <h3 className="font-medium mb-1">Email</h3>
-                  <p className="text-slate-400">contact@healthcare.com</p>
+                  <p className="text-slate-400">drsgkamble@gmail.com</p>
                 </div>
               </div>
 
@@ -42,7 +42,7 @@ const FooterSection = () => {
                 <Clock className="w-6 h-6 text-blue-400" />
                 <div>
                   <h3 className="font-medium mb-1">Working Hours</h3>
-                  <p className="text-slate-400">Mon - Sat: 9:00 AM - 7:00 PM</p>
+                  <p className="text-slate-400">Mon - Sat: 11:00 AM - 2:00 PM <br /> 6:00PM - 10:00PM </p>
                 </div>
               </div>
             </div>

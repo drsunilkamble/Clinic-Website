@@ -2,28 +2,28 @@ import { Star } from 'lucide-react';
 
 const reviews = [
   {
-    name: "Sarah Wilson",
+    name: "Shashikala Shinde",
     role: "Patient",
     rating: 5,
     comment: "The level of care and attention I received was exceptional.",
     image: "https://randomuser.me/api/portraits/women/1.jpg",
   },
   {
-    name: "James Martinez",
+    name: "Harish Kumar",
     role: "Patient",
     rating: 5,
-    comment: "State-of-the-art facilities and incredibly knowledgeable doctors.",
+    comment: "I was very impressed with the professionalism and care provided.",
     image: "https://randomuser.me/api/portraits/men/2.jpg",
   },
   {
-    name: "Emily Chen",
+    name: "Sunita Patil",
     role: "Patient",
     rating: 5,
     comment: "Professional, caring, and efficient. Best healthcare experience.",
     image: "https://randomuser.me/api/portraits/women/3.jpg",
   },
   {
-    name: "Robert Parker",
+    name: "Rajesh Sharma",
     role: "Patient",
     rating: 5,
     comment: "Outstanding medical care with a personal touch.",
