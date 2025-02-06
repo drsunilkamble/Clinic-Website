@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Star, ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import DoctorPNG from '@/assets/doctor.png';
 import ClinicLogo from "@/assets/ClinicLogo.png";
