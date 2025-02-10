@@ -1,5 +1,5 @@
+import { useState, useEffect } from "react";
 import DOCTORIMG from "@/assets/doctor.png";
-import { OrbitingCircles } from "@/components/ui/orbiting-circles";
 
 const doctorInfo = {
   name: "Dr. Sunil Kamble",
@@ -26,8 +26,28 @@ const doctorInfo = {
 };
 
 const AboutDoctor = () => {
+  const [radius, setRadius] = useState(250);
+
+  useEffect(() => {
+    const handleResize = () => {
+      // For mobile devices, use a smaller radius
+      if (window.innerWidth < 640) {
+        setRadius(150);
+      } else {
+        setRadius(250);
+      }
+    };
+
+    handleResize(); // Set initial radius
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <section id="about" className="py-16 md:py-32 relative bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50">
+    <section
+      id="about"
+      className="py-16 md:py-32 relative bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50"
+    >
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12 md:mb-16">
@@ -63,26 +83,35 @@ const AboutDoctor = () => {
                 />
               </div>
 
-              {/* Orbiting achievement cards */}
-              <OrbitingCircles
-                radius={Math.min(280, 0.55 * window.innerWidth)}
-                path={false}
-                className="absolute inset-0 w-full h-full"
-              >
-                {doctorInfo.achievements.map((stat, index) => (
-                  <div
-                    key={index}
-                    className="bg-white rounded-xl shadow-lg p-2 sm:p-4 transform transition-all duration-300 hover:scale-105 hover:shadow-xl text-center"
-                  >
-                    <p className="text-blue-600 text-xs sm:text-sm font-medium">
-                      {stat.title}
-                    </p>
-                    <p className="text-lg sm:text-xl font-bold text-slate-900">
-                      {stat.value}
-                    </p>
-                  </div>
-                ))}
-              </OrbitingCircles>
+              <div className="absolute inset-0">
+                {doctorInfo.achievements.map((stat, index) => {
+                  const angleOffset = Math.PI / 8; // 22.5° offset
+                  const angle =
+                    (2 * Math.PI / doctorInfo.achievements.length) * index +
+                    angleOffset;
+                  const x = radius * Math.cos(angle);
+                  const y = radius * Math.sin(angle);
+                  return (
+                    <div
+                      key={index}
+                      style={{
+                        position: "absolute",
+                        top: `calc(50% + ${y}px)`,
+                        left: `calc(50% + ${x}px)`,
+                        transform: "translate(-50%, -50%)",
+                      }}
+                      className="bg-white rounded-xl shadow-lg p-2 sm:p-4 transition-all duration-300 hover:scale-105 hover:shadow-xl text-center"
+                    >
+                      <p className="text-blue-600 text-xs sm:text-sm font-medium">
+                        {stat.title}
+                      </p>
+                      <p className="text-lg sm:text-xl font-bold text-slate-900">
+                        {stat.value}
+                      </p>
+                    </div>
+                  );
+                })}
+              </div>
 
               {/* Decorative blobs */}
               <div className="absolute -z-10 w-20 sm:w-32 h-20 sm:h-32 -top-4 -left-4 bg-blue-100 rounded-full opacity-50" />
@@ -118,7 +147,9 @@ const AboutDoctor = () => {
                     <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-blue-100 flex items-center justify-center group-hover:bg-blue-200 transition-colors">
                       <div className="w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full bg-blue-500" />
                     </div>
-                    <span className="text-slate-700 font-medium text-xs sm:text-sm">{item}</span>
+                    <span className="text-slate-700 font-medium text-xs sm:text-sm">
+                      {item}
+                    </span>
                   </div>
                 </div>
               ))}
@@ -129,27 +160,28 @@ const AboutDoctor = () => {
               <h4 className="text-lg sm:text-xl font-semibold text-slate-900 mb-4">
                 Education & Certification
               </h4>
-<ul className="list-disc space-y-2 ml-5">
-  {doctorInfo.expertise.map((item, index) => (
-    <li key={index} className="flex items-center gap-2">
-      <svg
-        className="w-4 h-4 text-blue-600"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M5 13l4 4L19 7"
-        />
-      </svg>
-      {/* Updated font size and color for consistency */}
-      <span className="text-base font-medium text-slate-900">{item}</span>
-    </li>
-  ))}
-</ul>
+              <ul className="list-disc space-y-2 ml-5">
+                {doctorInfo.education.map((item, index) => (
+                  <li key={index} className="flex items-center gap-2">
+                    <svg
+                      className="w-4 h-4 text-blue-600"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M5 13l4 4L19 7"
+                      />
+                    </svg>
+                    <span className="text-base font-medium text-slate-900">
+                      {item}
+                    </span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
