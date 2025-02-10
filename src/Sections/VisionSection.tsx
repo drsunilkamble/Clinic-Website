@@ -22,7 +22,7 @@ const VisionSection = () => {
       </div>
       <div>
         <h3 className="font-medium text-slate-900 mb-1 text-2xl">Commitment to Quality Healthcare</h3>
-        <p className="text-slate-600 text-lg">We aim to provide exceptional general healthcare with a focus on precision, care, and patient satisfaction.</p>
+        <p className="text-lg text-slate-600 max-w-xl leading-relaxed">We aim to provide exceptional general healthcare with a focus on precision, care, and patient satisfaction.</p>
       </div>
     </div>
   </div>
@@ -37,7 +37,7 @@ const VisionSection = () => {
       </div>
       <div>
         <h3 className="font-medium text-slate-900 mb-1 text-2xl">Accessible Wellness for All</h3>
-        <p className="text-slate-600 text-lg">Our goal is to ensure that quality healthcare is easily accessible to everyone, regardless of background or location.</p>
+        <p className="text-lg text-slate-600 max-w-xl leading-relaxed">Our goal is to ensure that quality healthcare is easily accessible to everyone, regardless of background or location.</p>
       </div>
     </div>
   </div>
@@ -51,7 +51,7 @@ const VisionSection = () => {
       </div>
       <div>
         <h3 className="font-medium text-slate-900 mb-1 text-2xl">Innovation in Patient Care</h3>
-        <p className="text-slate-600 text-lg">Leveraging cutting-edge technology and research to deliver progressive healthcare solutions that evolve with your needs.</p>
+        <p className="text-lg text-slate-600 max-w-xl leading-relaxed">Leveraging cutting-edge technology and research to deliver progressive healthcare solutions that evolve with your needs.</p>
       </div>
     </div>
   </div>

@@ -64,7 +64,7 @@ const NavigationBar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden p-2 rounded transition-colors text-slate-600 hover:bg-slate-200"
+          className="md:hidden p-2 rounded transition-colors text-slate-600 hover:bg-slate-200 bg-transparent"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -80,7 +80,7 @@ const NavigationBar = () => {
           <div className="flex flex-col p-4">
             <div className="flex justify-end">
               <button
-                className="p-2 rounded transition-colors text-slate-600 hover:bg-slate-200"
+                className="p-2 rounded transition-colors text-slate-600 hover:bg-slate-200 bg-transparent"
                 onClick={() => setIsMenuOpen(false)}
               >
                 <X className="w-6 h-6" />

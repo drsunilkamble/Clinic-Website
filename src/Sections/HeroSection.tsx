@@ -5,7 +5,7 @@ import DoctorPNG from '@/assets/doctor.png';
 import ClinicLogo from "@/assets/ClinicLogo.png";
 const HeroSection = () => {
   const [isHovered, setIsHovered] = useState(false);
-
+  const homePhoneNumber = '9699361189';
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
       {/* Navigation */}
@@ -14,43 +14,42 @@ const HeroSection = () => {
       {/* Hero Content */}
       <div className="max-w-7xl mx-auto px-4 pt-12 pb-24 grid lg:grid-cols-2 gap-16 items-center">
         <div className="space-y-8">
-        <img 
-  src={ClinicLogo}
-  alt="Clinic Logo" 
-  className="mt-4 w-32 hidden md:block" 
-/>
+          <img
+            src={ClinicLogo}
+            alt="Clinic Logo"
+            className="mt-4 w-32 hidden md:block"
+          />
 
-        <div className="flex flex-col space-y-3">
+          <div className="flex flex-col space-y-3">
 
-                    {/* Headline */}
-          {/* Headline */}
-          <h1 className="text-5xl font-bold text-slate-900 leading-tight">
-            Healthcare
-            <div className="inline-flex items-center gap-2 lg:ml-2 ml-0">
-              <span className="text-blue-600">reimagined</span>
-            </div>
-            <div className="">
-              for the modern age
-            </div>
-          </h1>
+            {/* Headline */}
+            {/* Headline */}
+            <h1 className="text-5xl font-bold text-slate-900 leading-tight">
+              Healthcare
+              <div className="inline-flex items-center gap-2 lg:ml-2 ml-0">
+                <span className="text-blue-600">reimagined</span>
+              </div>
+              <div className="">
+                for the modern age
+              </div>
+            </h1>
 
-          <p className="text-lg text-slate-600 max-w-xl leading-relaxed">
-            Experience the perfect blend of compassionate care and cutting-edge technology.
-            Your health journey begins with personalized attention that puts you first.
-          </p>
-        </div>
+            <p className="text-lg text-slate-600 max-w-xl leading-relaxed">
+              Experience the perfect blend of compassionate care and cutting-edge technology.
+              Your health journey begins with personalized attention that puts you first.
+            </p>
+          </div>
 
           {/* CTAs */}
-          <div className="flex items-center gap-4">
-            <Button
-              className="group bg-slate-900 hover:bg-slate-800 text-white px-8 py-7 text-lg rounded-2xl flex items-center gap-2"
-              onMouseEnter={() => setIsHovered(true)}
-              onMouseLeave={() => setIsHovered(false)}
-            >
-              Call Now
-              <ArrowUpRight className={`w-5 h-5 transition-transform ${isHovered ? 'translate-x-1 -translate-y-1' : ''}`} />
-            </Button>
-          </div>
+          <Button
+            className="group bg-slate-900 hover:bg-slate-800 text-white px-8 py-7 text-lg rounded-2xl flex items-center gap-2"
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+            onClick={() => (window.location.href = `tel:${homePhoneNumber}`)}
+          >
+            Call Now
+            <ArrowUpRight className={`w-5 h-5 transition-transform ${isHovered ? 'translate-x-1 -translate-y-1' : ''}`} />
+          </Button>
 
         </div>
 

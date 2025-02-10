@@ -54,10 +54,11 @@ const AboutDoctor = () => {
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-600 font-medium text-sm">
             Meet Our Expert
           </div>
-          <h2 className="text-2xl sm:text-4xl font-bold text-slate-900 mt-4 mb-3">
+          <h2 className="text-2xl sm:text-4xl font-bold text-slate-900 mt-4 mb-0">
             Experienced Healthcare Professional
           </h2>
-          <p className="text-slate-600 max-w-2xl mx-auto text-sm sm:text-base">
+          text-lg
+          <p className="text-slate-600 max-w-2xl mx-auto text-lg leading-relaxed">
             Dedicated to providing exceptional care with a patient-centered
             approach, combining years of expertise with innovative medical
             solutions.
@@ -131,7 +132,7 @@ const AboutDoctor = () => {
               <p className="text-base sm:text-xl text-blue-600 font-medium mb-4">
                 {doctorInfo.specialty}
               </p>
-              <p className="text-slate-600 leading-relaxed text-sm sm:text-base">
+              <p className="text-slate-600 leading-relaxed text-lg sm:text-base">
                 {doctorInfo.description}
               </p>
             </div>
