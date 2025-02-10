@@ -17,7 +17,7 @@ const HeroSection = () => {
           <img
             src={ClinicLogo}
             alt="Clinic Logo"
-            className="mt-4 w-32 hidden md:block"
+            className=" w-32 hidden md:block"
           />
 
           <div className="flex flex-col space-y-3">
