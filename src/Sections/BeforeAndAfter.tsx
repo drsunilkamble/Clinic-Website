@@ -57,7 +57,7 @@ const BeforeAndAfterGallery = () => {
               </p>
             </div>
         <div className="relative overflow-hidden w-full">
-          <div className="relative h-[450px] w-full">
+          <div className="relative md:h-[450px] h-[550px] w-full">
             {examples.map((example, index) => (
               <div
                 key={index}
