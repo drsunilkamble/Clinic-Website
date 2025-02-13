@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock, Facebook, Twitter, Instagram } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Facebook} from 'lucide-react';
 
 const FooterSection = () => {
   return (

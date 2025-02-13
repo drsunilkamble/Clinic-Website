@@ -2,7 +2,6 @@ import { Star } from 'lucide-react';
 import Img1 from "@/assets/Reviews/1.jpeg";
 import Img2 from "@/assets/Reviews/2.jpg";
 import Img3 from "@/assets/Reviews/3.jpeg";
-import Img4 from "@/assets/Reviews/4.jpeg";
 import Img5 from "@/assets/Reviews/5.jpg";
 
 const reviews = [
