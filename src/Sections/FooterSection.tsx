@@ -17,8 +17,8 @@ const FooterSection = () => {
                 <MapPin className="w-6 h-6 text-blue-400 flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="font-medium mb-1">Address</h3>
-                  <p className="text-slate-400">Siddharth Colony, Near Eastern Express Highway,<br />
-                    Chembur, Mumbai - 400071</p>
+                  <p className="text-slate-400">Shop No.1, K.N.Gaikwad Road, Siddharth Colony<br />
+                  Chembur , Mumbai - 400 071, India</p>
                 </div>
               </div>
 
@@ -26,7 +26,8 @@ const FooterSection = () => {
                 <Phone className="w-6 h-6 text-blue-400" />
                 <div>
                   <h3 className="font-medium mb-1">Phone</h3>
-                  <p className="text-slate-400">+91 9699361189</p>
+                  <p className="text-slate-400">+91 96993 61189</p>
+                  <p className="text-slate-400">+91 98671 41389</p>
                 </div>
               </div>
 
@@ -48,14 +49,8 @@ const FooterSection = () => {
             </div>
 
             <div className="flex gap-4 pt-4">
-              <a href="#" className="p-2 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors">
+              <a href="https://www.facebook.com/public/Sunil-Kamble/" className="p-2 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors">
                 <Facebook className="w-5 h-5" />
-              </a>
-              <a href="#" className="p-2 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors">
-                <Twitter className="w-5 h-5" />
-              </a>
-              <a href="#" className="p-2 bg-slate-800 rounded-full hover:bg-slate-700 transition-colors">
-                <Instagram className="w-5 h-5" />
               </a>
             </div>
           </div>
@@ -63,7 +58,7 @@ const FooterSection = () => {
           {/* Map */}
           <div className="h-[400px] rounded-2xl overflow-hidden">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.1097032398083!2d72.89931121744384!3d19.058361387097165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c5f39a7d77d1%3A0x9ebbf0b7419fcc72!2sSiddharth%20Colony%2C%20Chembur%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1647850846174!5m2!1sen!2sin"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.1097032398083!2d72.89931121744384!3d19.058361387097165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c5f39a7d77d1%3A0x9ebbf0b7419fcc72!2sShop%20No.1%2C%20K.N.Gaikwad%20Road%2C%20Siddharth%20Colony%2C%20Chembur%2C%20Mumbai%20-%20400%20071%2C%20India!5e0!3m2!1sen!2sin!4v1647850846174!5m2!1sen!2sin"
               width="100%"
               height="100%"
               style={{ border: 0 }}
