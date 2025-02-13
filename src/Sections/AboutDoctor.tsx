@@ -1,27 +1,25 @@
 import { useState, useEffect } from "react";
-import DOCTORIMG from "@/assets/doctor.png";
+import DOCTORIMG from "@/assets/AboutImage.png";
 
 const doctorInfo = {
   name: "Dr. Sunil Kamble",
-  specialty: "BMMS",
+  specialty: "BAMS (Mumbai)",
   description:
     "A distinguished medical professional with over 15 years of experience in cardiology, committed to delivering exceptional patient care through evidence-based practices.",
   education: [
-    "M.D. from Johns Hopkins University",
-    "Cardiology Fellowship at Mayo Clinic",
-    "Board Certified in Internal Medicine",
+    "Bachelor of Ayurvedic Medicine and Surgery (BAMS) - Mumbai University",
   ],
   expertise: [
-    "Preventive Cardiology",
-    "Heart Disease Management",
-    "Cardiac Rehabilitation",
-    "Interventional Procedures",
+    "General HealthCare",
+    "Preventive Healthcare ",
+    "Aesthetic Dermatology",
+    "Skin Care Treatments"
   ],
   achievements: [
     { title: "Patients Treated", value: "10,000+" },
     { title: "Years Experience", value: "15+" },
     { title: "Success Rate", value: "99%" },
-    { title: "Awards Won", value: "25+" },
+    { title: "Awards Won", value: "10+" },
   ],
 };
 
@@ -126,10 +124,10 @@ const AboutDoctor = () => {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-600 font-medium text-sm mb-4">
                 Senior Specialist
               </div>
-              <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 mb-2">
+              <h3 className="text-2xl sm:text-3xl font-bold text-blue-700 mb-2">
                 {doctorInfo.name}
               </h3>
-              <p className="text-base sm:text-xl text-blue-600 font-medium mb-4">
+              <p className="text-base sm:text-xl text-black font-medium mb-4">
                 {doctorInfo.specialty}
               </p>
               <p className="text-slate-600 leading-relaxed text-lg sm:text-base">

@@ -1,4 +1,9 @@
 import { Star } from 'lucide-react';
+import Img1 from "@/assets/Reviews/1.jpeg";
+import Img2 from "@/assets/Reviews/2.jpg";
+import Img3 from "@/assets/Reviews/3.jpeg";
+import Img4 from "@/assets/Reviews/4.jpeg";
+import Img5 from "@/assets/Reviews/5.jpg";
 
 const reviews = [
   {
@@ -6,28 +11,28 @@ const reviews = [
     role: "Patient",
     rating: 5,
     comment: "The level of care and attention I received was exceptional.",
-    image: "https://randomuser.me/api/portraits/women/1.jpg",
+    image: Img1,
   },
   {
     name: "Harish Kumar",
     role: "Patient",
     rating: 5,
     comment: "I was very impressed with the professionalism and care provided.",
-    image: "https://randomuser.me/api/portraits/men/2.jpg",
+    image: Img2,
   },
   {
     name: "Sunita Patil",
     role: "Patient",
     rating: 5,
     comment: "Professional, caring, and efficient. Best healthcare experience.",
-    image: "https://randomuser.me/api/portraits/women/3.jpg",
+    image: Img3,
   },
   {
     name: "Rajesh Sharma",
     role: "Patient",
     rating: 5,
     comment: "Outstanding medical care with a personal touch.",
-    image: "https://randomuser.me/api/portraits/men/4.jpg",
+    image: Img5,
   },
 ];
 
