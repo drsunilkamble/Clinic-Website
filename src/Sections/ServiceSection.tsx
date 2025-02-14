@@ -2,31 +2,34 @@ import React from 'react';
 import { ArrowUpRight } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import ServicesImage from "@/assets/services-4.png"
+import ServicesImage2 from "@/assets/Aesthetic-Dermatology.jpg"
+import ServicesImage3 from "@/assets/GeneralHealthcare.jpg"
+import ServicesImage4 from "@/assets/Preventive-HealthCare.jpg"
 
 const services = [
   {
-    title: "General Medicine",
-    description: "Comprehensive primary healthcare services including preventive care and health screenings.",
-    features: ["Regular Check-ups", "Vaccinations", "Health Screenings"],
-    image : ServicesImage
+    title: "General HealthCare",
+    description: "Comprehensive care focusing on overall well-being with personalized check-ups and continuous support.",
+    features: ["Personalized Check-ups", "Continuous Care", "Holistic Approach"],
+    image: ServicesImage3,
   },
   {
-    title: "Orthopedics",
-    description: "Expert care for musculoskeletal conditions with advanced treatment options.",
-    features: ["Joint Replacement", "Sports Medicine", "Fracture Care"],
-    image : ServicesImage
+    title: "Preventive Healthcare",
+    description: "Emphasizing early detection and prevention to keep you healthy through regular screenings and advice.",
+    features: ["Regular Screenings", "Vaccinations", "Lifestyle Advice"],
+    image: ServicesImage4,
   },
   {
-    title: "Gastroenterology",
-    description: "Specialized diagnosis and treatment of digestive system disorders.",
-    features: ["Endoscopy", "Colonoscopy", "Nutritional Counseling"],
-    image : ServicesImage
+    title: "Aesthetic Dermatology",
+    description: "Advanced treatments designed to rejuvenate your skin and boost your confidence.",
+    features: ["Skin Rejuvenation", "Acne Treatments", "Cosmetic Procedures"],
+    image: ServicesImage2,
   },
   {
-    title: "Cardiology",
-    description: "Comprehensive heart care including advanced diagnostics and prevention.",
-    features: ["ECG Testing", "Heart Disease Treatment", "Cardiac Rehabilitation"],
-    image : ServicesImage
+    title: "Skin Care Treatments",
+    description: "Customized skin care plans addressing individual concerns with modern techniques.",
+    features: ["Personalized Regimens", "Professional Advice", "Innovative Solutions"],
+    image: ServicesImage,
   }
 ];
 
@@ -75,19 +78,19 @@ const ServiceCard: React.FC<ServiceProps> = ({ title, description, features, ima
 );
 
 const ServicesSection = () => (
-  <section id='services' className="py-20 max-w-7xl">
+  <section id="services" className="py-20 max-w-7xl">
     <div className="max-w-7xl mx-auto px-4">
       <div className="space-y-2 mb-5">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-600 font-medium text-sm">
-                Our Medical Services
-              </div>
-              <h2 className="text-4xl font-bold text-slate-900 leading-tight">
-                What we offer to our patients
-              </h2>
-              <p className="text-lg text-slate-600 leading-relaxed">
-              Experience excellence in healthcare through our specialized medical services.
-              </p>
-            </div>
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-600 font-medium text-sm">
+          Our Medical Services
+        </div>
+        <h2 className="text-4xl font-bold text-slate-900 leading-tight">
+          What We Offer
+        </h2>
+        <p className="text-lg text-slate-600 leading-relaxed">
+          Expertise-driven care directly aligned with our specialist’s areas of excellence.
+        </p>
+      </div>
 
       <div className="grid sm:grid-cols-1 lg:grid-cols-2 gap-6">
         {services.map((service, index) => (
