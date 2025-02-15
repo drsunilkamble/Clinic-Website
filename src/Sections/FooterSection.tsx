@@ -69,7 +69,7 @@ const FooterSection = () => {
         </div>
 
         <div className="border-t border-slate-700/50 mt-16 pt-8 text-center text-slate-400">
-          <p>© {new Date().getFullYear()} Healthcare Clinic. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Dr Kamble's Clinic. All rights reserved.</p>
         </div>
       </div>
     </footer>

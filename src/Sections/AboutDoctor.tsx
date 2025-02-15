@@ -5,7 +5,7 @@ const doctorInfo = {
   name: "Dr. Sunil Kamble",
   specialty: "BAMS (Mumbai)",
   description:
-    "A distinguished medical professional with over 15 years of experience in cardiology, committed to delivering exceptional patient care through evidence-based practices.",
+    "A distinguished medical professional with over 35 years of experience in cardiology, committed to delivering exceptional patient care through evidence-based practices.",
   education: [
     "Bachelor of Ayurvedic Medicine and Surgery (BAMS) - Mumbai University",
   ],
@@ -17,7 +17,7 @@ const doctorInfo = {
   ],
   achievements: [
     { title: "Patients Treated", value: "10,000+" },
-    { title: "Years Experience", value: "15+" },
+    { title: "Years Experience", value: "35+" },
     { title: "Success Rate", value: "99%" },
     { title: "Awards Won", value: "10+" },
   ],
