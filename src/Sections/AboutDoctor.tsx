@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import DOCTORIMG from "@/assets/AboutImage.png";
 
 const doctorInfo = {
-  name: "Dr. Sunil Kamble",
+  name: "Dr.Sunil Kamble",
   specialty: "BAMS (Mumbai)",
   description:
     "A distinguished medical professional with over 35 years of experience in cardiology, committed to delivering exceptional patient care through evidence-based practices.",
