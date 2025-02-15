@@ -55,7 +55,6 @@ const AboutDoctor = () => {
           <h2 className="text-2xl sm:text-4xl font-bold text-slate-900 mt-4 mb-0">
             Experienced Healthcare Professional
           </h2>
-          text-lg
           <p className="text-slate-600 max-w-2xl mx-auto text-lg leading-relaxed">
             Dedicated to providing exceptional care with a patient-centered
             approach, combining years of expertise with innovative medical
