@@ -44,11 +44,9 @@ interface Review {
 }
 
 const ReviewCard = ({ name, role, rating, comment, image }: Review) => (
-  <div className="min-w-[400px] bg-white/80 backdrop-blur-sm p-8 rounded-3xl 
+  <div className="min-w-[400px] bg-gradient-to-br from-blue-200 via-blue-300/80 to-indigo-200 backdrop-blur-sm p-8 hover:cursor-pointer rounded-3xl mb-10
     border border-white/20 hover:border-white/40 
-    shadow-[0_8px_30px_rgb(0,0,0,0.04)] 
-    hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] 
-    transition-all duration-300">
+    transition-all duration-300  drop-shadow-xl">
     <div className="flex flex-col h-full justify-between gap-6">
       <div>
         <div className="flex items-center mb-6 gap-1">
@@ -76,13 +74,13 @@ const ReviewCard = ({ name, role, rating, comment, image }: Review) => (
 
 const ReviewSection = () => {
   return (
-    <section id='reviews' className="py-32 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50 to-slate-50 opacity-90" />
+    <section id='reviews' className="py-32 pt-10 relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-100 via-purple-100 to-blue-200 opacity-90" />
       
       <div className="max-w-7xl mx-auto px-4 relative">
         <div className="max-w-3xl">
           <div className="space-y-2">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-600 font-medium text-sm">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-300 text-blue-900 font-medium text-sm">
               Patient Reviews
             </div>
             <h2 className="text-4xl font-bold text-slate-900 leading-tight">

@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import DOCTORIMG from "@/assets/AboutImage.png";
 
 const doctorInfo = {
-  name: "Dr.Sunil Kamble",
+  name: "Dr. Sunil Kamble",
   specialty: "BAMS (Mumbai)",
   description:
     "A distinguished medical professional with over 35 years of experience in cardiology, committed to delivering exceptional patient care through evidence-based practices.",
@@ -15,16 +15,10 @@ const doctorInfo = {
     "Aesthetic Dermatology",
     "Skin Care Treatments"
   ],
-  achievements: [
-    { title: "Patients Treated", value: "10,000+" },
-    { title: "Years Experience", value: "35+" },
-    { title: "Success Rate", value: "99%" },
-    { title: "Awards Won", value: "10+" },
-  ],
 };
 
 const AboutDoctor = () => {
-  const [radius, setRadius] = useState(250);
+  const [, setRadius] = useState(250);
 
   useEffect(() => {
     const handleResize = () => {
@@ -67,7 +61,7 @@ const AboutDoctor = () => {
           {/* Left Column - Image */}
           <div className="relative">
             {/* Main circular image container */}
-            <div className="relative w-72 h-72 sm:w-96 sm:h-96 md:w-[500px] md:h-[500px] mx-auto">
+            <div className="relative w-80 h-80 sm:w-96 sm:h-96 md:w-[500px] md:h-[500px] mx-auto">
               {/* Decorative rings */}
               <div className="absolute inset-0 rounded-full border-2 border-blue-100 animate-[spin_20s_linear_infinite] animate-spin-slow spin-container" />
               <div className="absolute inset-4 rounded-full border-2 border-dashed border-blue-200" />
@@ -79,36 +73,6 @@ const AboutDoctor = () => {
                   alt={doctorInfo.name}
                   className="w-full h-full object-cover scale-125"
                 />
-              </div>
-
-              <div className="absolute inset-0">
-                {doctorInfo.achievements.map((stat, index) => {
-                  const angleOffset = Math.PI / 8; // 22.5° offset
-                  const angle =
-                    (2 * Math.PI / doctorInfo.achievements.length) * index +
-                    angleOffset;
-                  const x = radius * Math.cos(angle);
-                  const y = radius * Math.sin(angle);
-                  return (
-                    <div
-                      key={index}
-                      style={{
-                        position: "absolute",
-                        top: `calc(50% + ${y}px)`,
-                        left: `calc(50% + ${x}px)`,
-                        transform: "translate(-50%, -50%)",
-                      }}
-                      className="bg-white rounded-xl shadow-lg p-2 sm:p-4 transition-all duration-300 hover:scale-105 hover:shadow-xl text-center"
-                    >
-                      <p className="text-blue-600 text-xs sm:text-sm font-medium">
-                        {stat.title}
-                      </p>
-                      <p className="text-lg sm:text-xl font-bold text-slate-900">
-                        {stat.value}
-                      </p>
-                    </div>
-                  );
-                })}
               </div>
 
               {/* Decorative blobs */}
@@ -123,13 +87,15 @@ const AboutDoctor = () => {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-100 text-blue-600 font-medium text-sm mb-4">
                 Senior Specialist
               </div>
-              <h3 className="text-2xl sm:text-3xl font-bold text-blue-700 mb-2">
-                {doctorInfo.name}
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-blue-700 mb-2">
+                <span style={{ fontFamily: '"Times New Roman", Times, serif' }}>
+                  {doctorInfo.name}
+                </span>
               </h3>
-              <p className="text-base sm:text-xl text-black font-medium mb-4">
+              <p className="text-base sm:text-xl text-black font-semibold mb-4">
                 {doctorInfo.specialty}
               </p>
-              <p className="text-slate-600 leading-relaxed text-lg sm:text-base">
+              <p className="text-slate-900 leading-relaxed text-lg sm:text-base">
                 {doctorInfo.description}
               </p>
             </div>
@@ -139,7 +105,7 @@ const AboutDoctor = () => {
               {doctorInfo.expertise.map((item, index) => (
                 <div
                   key={index}
-                  className="group bg-white/60 p-2 sm:p-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:bg-white/80 hover:-translate-y-1"
+                  className="group bg-blue-100 p-2 sm:p-4 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:bg-blue-200 hover:-translate-y-1"
                 >
                   <div className="flex items-center gap-2">
                     <div className="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-blue-100 flex items-center justify-center group-hover:bg-blue-200 transition-colors">
@@ -154,7 +120,7 @@ const AboutDoctor = () => {
             </div>
 
             {/* Education Section */}
-            <div className="bg-white/50 rounded-2xl p-4 sm:p-6 shadow-sm">
+            <div className="bg-blue-100 hover:bg-blue-200 rounded-2xl p-4 sm:p-6 shadow-sm">
               <h4 className="text-lg sm:text-xl font-semibold text-slate-900 mb-4">
                 Education & Certification
               </h4>
