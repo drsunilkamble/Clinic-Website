@@ -6,7 +6,6 @@ import ServicesSection from './Sections/ServiceSection'
 import ReviewSection from './Sections/ReviewSection'
 import FooterSection from './Sections/FooterSection'
 import AboutDoctor from './Sections/AboutDoctor'
-import BeforeAndAfterGallery from './Sections/BeforeAndAfter'
 
 function App() {
 
