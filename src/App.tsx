@@ -19,7 +19,7 @@ function App() {
             <VisionSection />
             <AboutDoctor />
             <ServicesSection />
-            <BeforeAndAfterGallery />
+
             <ReviewSection />
             <FooterSection />
           </div>
