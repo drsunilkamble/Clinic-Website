@@ -43,7 +43,15 @@ const FooterSection = () => {
                 <Clock className="w-6 h-6 text-blue-400" />
                 <div>
                   <h3 className="font-medium mb-1">Working Hours</h3>
-                  <p className="text-slate-400">Mon - Sat: 11:00 AM - 2:00 PM <br /> 6:00PM - 10:00PM </p>
+                  <div className="flex gap-4 items-start">
+                    <div>
+                      <span className="text-slate-400">Mon - Sat</span>
+                    </div>
+                    <div className="flex flex-col gap-1">
+                      <span className="text-slate-400">11:00 AM - 2:00 PM &</span>
+                      <span className="text-slate-400">6:00 PM - 10:00 PM</span>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
