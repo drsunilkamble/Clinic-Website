@@ -6,6 +6,7 @@ import ServicesSection from './Sections/ServiceSection'
 import ReviewSection from './Sections/ReviewSection'
 import FooterSection from './Sections/FooterSection'
 import AboutDoctor from './Sections/AboutDoctor'
+import SloganSection from './Sections/SloganSection'
 
 function App() {
 
@@ -18,7 +19,7 @@ function App() {
             <VisionSection />
             <AboutDoctor />
             <ServicesSection />
-
+            <SloganSection  />
             <ReviewSection />
             <FooterSection />
           </div>
